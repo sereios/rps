@@ -23,11 +23,12 @@ def player(prev_play, opponent_history=[]):
 
     opponent_history.append(prev_play)
 
-    guess = "R"
+    guess = "S"  # Somehow, starting with "S" increases chances against Abbey
+    
     if len(opponent_history) > MEMORY:
         last_moves = "".join(opponent_history[-MEMORY:])
         possible_combinations = [last_moves[1:] + next_play
-                            for next_play in MOVES]
+                                 for next_play in MOVES]
         update_known_combinations(last_moves)
         guess = return_most_likely(possible_combinations)
 
