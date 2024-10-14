@@ -1,3 +1,3 @@
 # Rock Paper Scissors
 
-This is the boilerplate for the Rock Paper Scissors project. Instructions for building your project can be found at https://www.freecodecamp.org/learn/machine-learning-with-python/machine-learning-with-python-projects/rock-paper-scissors
+This is my solution to FreeCodeCamps's Rock Paper Scissors project. As required, based primarily on the foundational boilerplate with my code in `RPS.py`.
