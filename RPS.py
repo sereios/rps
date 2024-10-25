@@ -50,6 +50,8 @@ def player(prev_play, opponent_history=[]):
     guess = "P"  # Somehow, starting with "S" increases chances against Abbey.
                  # Hint taken from the freecodecamp forum.
     
+    # play a few games till length of opponent_history allows for use of markov
+    # chain, then use that to guess next moves
     if len(opponent_history) > MEMORY:
         last_moves = "".join(opponent_history[-MEMORY:])
         update_known_combinations(last_moves)
